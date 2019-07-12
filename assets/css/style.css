@@ -541,7 +541,7 @@ nav.navbar .btn-navbar:hover {
 	box-shadow: 4px 3px 10px 0 rgba(0, 0, 0, 0.10)
 }
 .single-service i.fa,i.far{
-	font-size: 20px;
+	font-size: 30px;
 	width: 60px;
 	height: 60px;
 	border: 1px solid #ddd;
@@ -722,7 +722,9 @@ nav.navbar .btn-navbar:hover {
 	  padding-top: 15px; }
   
   .footer-info-text {
-	margin: 26px 0 32px; }
+	margin: 26px 0 32px;
+    color: #fff;
+}
   
   .footer-left-widget {
 	padding-left: 80px; }
@@ -932,19 +934,23 @@ nav.navbar .btn-navbar:hover {
 	transition: all 0.3s ease;
   }
   /* client testimonial */
-  
+  #ba.owl-theme .owl-dots .owl-dot:last-child {
+	display: none;
+  }
 .testimonial{ margin: 0 20px 50px; }
 .testimonial .pic{
-    display: inline-block;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    margin: 0 15px 15px 0;
+	display: block;
+    width: auto;
+	height: auto;
+	margin: 0 auto;
+ 
 }
 .testimonial .pic img{
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+    display: block;
+
 }
 .testimonial .testimonial-profile{
     display: inline-block;
@@ -988,19 +994,7 @@ nav.navbar .btn-navbar:hover {
     left: auto;
     right: 0;
 }
-.owl-theme .owl-controls{
-    margin-top: 10px;
-    margin-left: 30px;
+
+.slick-dots {
+    display: none !important;
 }
-.owl-theme .owl-controls .owl-buttons div{
-    opacity: 0.8;
-    background: #fff;
-}
-.owl-prev:before,
-.owl-next:before{
-    content: "\f053";
-    font-family: "Font Awesome 5 Free"; font-weight: 900;
-    font-size: 20px;
-    color: #1f487e;
-}
-.owl-next:before{ content: "\f054"; }
